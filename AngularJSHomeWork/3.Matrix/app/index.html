@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="matrix">
+
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS Intro</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/ang
+ularjs/1.5.6/angular.min.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+
+<body ng-controller="matrixControl">
+<table>
+    <tr ng-repeat="row in rows">
+        <td ng-repeat="col in cols">{{col}}</td>
+    </tr>
+</table>
+</body>
+
+</html>

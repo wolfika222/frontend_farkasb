@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="moviesApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS Intro</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/ang
+ularjs/1.5.6/angular.min.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body ng-controller="moviesController">
+    <button ng-click="showHide()">Show/Hide</button>
+    <ul class="list-group" ng-show="hidden">
+        <li class="list-group-item" ng-repeat="movie in movies">
+            <span>{{ movie.title }}</span>
+            <p>
+                {{ movie.description }}
+            </p>
+        </li>
+    </ul>
+    <p>Total number of movies: {{ movies.length }}</p>
+</body>
+
+</html>

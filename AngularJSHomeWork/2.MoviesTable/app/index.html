@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="moviesApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS Intro</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/ang
+ularjs/1.5.6/angular.min.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+
+<body ng-controller="moviesController">
+    <button ng-click="showHide()">Show/Hide</button>
+    <table class="table table-striped" ng-show="hidden">
+        <tr ng-repeat="movie in movies">
+            <td class="col-md-3">{{ movie.title }}</td>
+            <td class="col-md-9">
+                <p>{{ movie.description }}</p>
+            </td>
+        </tr>
+    </table>
+    <p>Total number of movies: {{ movies.length }}</p>
+</body>
+
+</html>
