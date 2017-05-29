@@ -1,0 +1,14 @@
+{
+  "name": "angular-quickstart",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "http-server ./app -p 8080 -c -1"
+  },
+  "dependencies": {
+   
+  },
+  "devDependencies": {
+    "http-server": "0.10.0"
+  }
+}
