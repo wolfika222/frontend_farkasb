@@ -1,0 +1,2 @@
+routerApp
+.controller('redcontroller', function)

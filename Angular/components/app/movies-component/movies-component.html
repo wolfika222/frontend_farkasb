@@ -1,19 +1,17 @@
-<button ng-click="showHide()">Show/Hide</button>
-<button ng-click="add()">Add new</button>
+<button ng-click="showhide()">Show/hide</button>
+<button ng-click="addListItem()">Add</button>
 <div>
-    <label>Title</label>
-    <input ng-model="newMovie.title"/>
+    <label>Title:</label>
+    <input ng-model="newMovie.title" />
 </div>
 <div>
-    <label>Description</label>
-    <input ng-model="newMovie.description"/>
+    <label>Description:</label>
+    <input ng-model="newMovie.description" />
 </div>
-<p>Total number of movies: {{ movies.length }}</p>
-<ul class="list-group" ng-show="hidden">
-    <li class="list-group-item" ng-repeat="movie in movies">
+<ul ng-show="visible">
+    <li ng-repeat="movie in movies">
         <span>{{ movie.title }}</span>
-        <p>
-            {{ movie.description }}
-        </p>
+        <p>{{ movie.description }}</p>
     </li>
 </ul>
+<p>Total number of movies: {{ movies.length }}</p>
